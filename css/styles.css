@@ -735,7 +735,8 @@ ul {
 	fill: var(--accent-text-color);
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
 	border-color: var(--accent-text-color);
 }
 
