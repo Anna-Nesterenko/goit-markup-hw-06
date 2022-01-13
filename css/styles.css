@@ -696,6 +696,7 @@ ul {
 }
 
 /* *Размертка форм */
+
 .modal-form {
   width: 448px;
   margin: 40px;
@@ -722,6 +723,12 @@ ul {
   padding: 12px 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.form-input:focus {
+	border-color: var(--accent-text-color);
 }
 
 .form-icon{
@@ -733,11 +740,6 @@ ul {
 
 .form-input:focus ~ .form-icon {
 	fill: var(--accent-text-color);
-}
-
-.form-input:focus,
-.form-input:hover {
-	border-color: var(--accent-text-color);
 }
 
 .comment{
@@ -775,7 +777,6 @@ padding: 12px 16px;
 }
 
 .checkbox-icon{
-	display: block;
 	width: 16px;
 	height: 15px;
 	margin-right: 7px;
