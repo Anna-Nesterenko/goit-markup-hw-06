@@ -291,12 +291,12 @@ ul {
 }
 
 .thumb-title {
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
+  justify-content: center;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white-text-color);
@@ -530,9 +530,9 @@ ul {
 }
 
 .footer-form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* !portfolio main*/
@@ -702,12 +702,10 @@ ul {
 /* *Размертка форм */
 
 .modal-form {
-  width: 448px;
-  margin: 40px;
+  padding: 40px;
 }
 
 .form-title {
-  margin-bottom: 12px;
   font-size: 20px;
   text-align: center;
   color: var(--second-text-color);
@@ -718,8 +716,13 @@ ul {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  font-size: 12px;
   letter-spacing: 0.01em;
 }
+
+/* .form-label:first-child {
+  margin-top: 0;
+} */
 
 .form-input {
   bottom: -1px;
@@ -753,6 +756,7 @@ ul {
 
 .form-input.comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
   letter-spacing: 0.01em;
 }
 
@@ -795,11 +799,11 @@ ul {
 }
 
 .btn-wrap {
+  margin-top: 30px;
   text-align: center;
 }
 
 .button-send {
-  margin-top: 30px;
   padding: 10px 56px;
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
